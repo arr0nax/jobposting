@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Job Entries</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="/styles.css" media="screen" title="no title" charset="utf-8">
+    <script
+    src="https://code.jquery.com/jquery-3.1.1.js"
+    integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+    crossorigin="anonymous"></script>
+    <script type="text/javascript" src="/scripts.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Pinyon+Script|Playfair+Display+SC|Tangerine" rel="stylesheet">
+
+  </head>
+  <body>
+  <h1>Ye Olde Job Postings</h1>
+  <div class="col-sm-6">
+  <div id="scroll-top">
+  </div>
+  <div id="scroll-middle">
+  {% if entry_array is not empty %}
+  <ul>
+    {% for entry in entry_array %}
+      <li>{{entry.getTitle}}</li>
+      <ul>
+      <li>{{entry.getDescription}}</li>
+      <li>{{entry.getLocation}}</li>
+      <li>{{entry.getPay}}</li>
+      </ul>
+    {% endfor %}
+  </ul>
+  <form action='/clear' method='post' id="clearJobForm">
+  <button type="submit" name="delete">Cleareth Thine Job Postings</button>
+  </form>
+  {% endif %}
+
+  </div>
+  <div id="scroll-bottom">
+  </div>
+  </div>
+  <div class="col-sm-6">
+    <form action='/' method='post' id="postForm">
+    <div class="form-container">
+    <div class="form-group"
+      <label for="title">Ye Title</label>
+      <input id="title" type="text" name="title" placeholder="Ye Title">
+      </div>
+      <div class="form-group"
+      <label for="description">Job Descriptioneth</label>
+      <input id="description" type="text" name="description" placeholder="Quoth us thine suffering">
+      </div>
+      <div class="form-group"
+      <label for="location">Thine Location</label>
+      <input id="location" type="text" name="location" placeholder="Share with us thine local">
+      </div>
+      <div class="form-group"
+      <label for="pay">What Gold do ye Offer</label>
+      <input id="pay" type="text" name="pay" placeholder="Give us yer gold">
+      </div>
+      <img src="../img/knight.gif" alt="knight on horse"/><button id="postFormSubmit "type="submit">Task upon thine interneth</button><img src="../img/knight.gif" alt="knight on horse"/>
+      </div>
+    </form>
+    </div>
+  </body>
+</html>

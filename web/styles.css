@@ -1,0 +1,88 @@
+form {
+  margin-left: 50px;
+}
+
+body {
+  background-image: url('../img/castle.gif');
+  background-size: 100vw 100vh;
+  color: white;
+  font-size: 30px;
+  font-family: 'Pinyon Script', cursive;
+}
+
+input {
+  color: #523D74;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+::-webkit-input-placeholder {
+  color: white;
+}
+
+button {
+  background-image: url(../img/forest.gif);
+}
+
+h1 {
+  padding: 50px 0 110px 0;
+  text-align: center;
+  font-size: 50px;
+  background-image: url('../img/scroll.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #523D74;
+}
+
+ul {
+  margin-bottom: 0px;
+  color: #523D74;
+}
+
+#postForm {
+  background-image: url('../img/board.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 200px;
+  text-align: center;
+  padding-bottom: 120px;
+
+
+}
+
+#clearJobForm {
+  /*display: none;*/
+}
+
+#scroll-top {
+  height: 100px;
+  width: 750px;
+  background-image: url(../img/scroll2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#scroll-middle {
+  background-size: 443px 100%;
+  background-image: url(../img/scroll4.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 395px;
+  margin-left: 175px;
+}
+
+#scroll-bottom {
+  height: 100px;
+  width: 725px;
+  background-image: url(../img/scroll3.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left: 10px;
+}
+
+
+/*font-family: 'Playfair Display SC', serif;
+font-family: 'Great Vibes', cursive;
+font-family: 'Tangerine', cursive;
+font-family: 'Pinyon Script', cursive;*/
